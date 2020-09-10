@@ -13,6 +13,6 @@ Add-DhcpServerv4Scope -EndRange 10.101.0.99 -Name "Contoso DHCP" -StartRange 10.
 
 Set-DhcpServerV4OptionValue -ScopeId 10.101.0.0 -DnsServer 10.101.0.100 -DnsDomain contoso.local -Router 10.101.0.200 # Adiciona o IP do servidor DNS e o Gateway ao escopo.
 
-Get-DhcpServerV4Scope # Verifica o escopo criado.
+Get-DhcpServerV4Scope # Verifica os escopos criados.
 
 Get-DhcpServerV4Scope 10.101.0.0  # Verifica o escopo criado atráves do ID do escopo.
